@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "PersonalDetails";
+}
+
+<h1>PersonalDetails</h1>
+<form asp-action="PersonalDetails">
+    <table class="table">
+        <tr>
+            <td>Enter your Name : </td>
+            <td>
+                <input type="text" name="personname" id="personname"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Enter your Email : </td>
+            <td>@Html.TextBox("email")</td>
+        </tr>
+        <tr>
+            <td>Select city : </td>
+            <td>@Html.DropDownList("cities")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Save" class="btn btn-primary"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
